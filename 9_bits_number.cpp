@@ -7,7 +7,7 @@
 bool bk[10]; // book 用来标记是否数字 1~9 是否使用
 int num = 0; // 所求的 9 位数
 
-void dfs(int n) { // 第 10-n 位
+void dfs(int n) { // 这是 n 位数的情况
     for (int i = 1; i < 10; ++i) {
         if (!bk[i]) { // 如果没有使用 i
             if ((num * 10 + i) % n == 0) { // 如果符合 reminder == 0
