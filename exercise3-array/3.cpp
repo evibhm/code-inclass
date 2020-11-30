@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdio>
 
 int main()
 {
@@ -17,20 +18,20 @@ int main()
               << "*****  Welcome to BUYTICKETS system *****\n"
               << "******************************************\n";
     while (true) {
-        int opear;
-        std::cout << "\nThe opearator is as follows:\n"
+        char oper;
+        std::cout << "\nThe operator is as follows:\n"
                   << "******************************************\n"
-                  << "Opearator 0: Quit the BUYTICKETS system.\n"
-                  << "Opearator 1: Order a seats in the theater.\n"
-                  << "Opearator 2: Buy a ticket in given price.\n"
+                  << "operator 0: Quit the BUYTICKETS system.\n"
+                  << "operator 1: Order a seats in the theater.\n"
+                  << "operator 2: Buy a ticket in given price.\n"
                   << "******************************************\n"
-                  << "Please input the opearator order:";
-        std::cin >> opear;
-        switch (opear) {
-            case 0: {
+                  << "Please input the operator order:";
+        oper = getchar();
+        switch (oper) {
+            case '0': {
                 return 0;
             }
-            case 1: {
+            case '1': {
                 int x, y;
                 int tickerNum;
                 std::cout << "\nHow many tickets do you want to buy? ";
@@ -53,7 +54,7 @@ int main()
                 }
                 break;
             }
-            case 2: {
+            case '2': {
                 int ticketPrice;
                 int cnt = 0;
                 std::cout << "Please input the price of seat you want:";
@@ -76,7 +77,8 @@ int main()
                 break;
             }
             default: {
-                std::cout << "Opearter Invalid!\n";
+                std::cout << "operater Invalid!\n";
+                continue;
             }
         }
     }
