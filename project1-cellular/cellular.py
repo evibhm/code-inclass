@@ -103,14 +103,15 @@ def update(screen):
     状态进行更新，并返回更新后的细胞状态，返回值类型与screen类型一致
     
     """
+    count = [[0 for i in range(width + 1)] for j in range(hight + 1)]
     new_screen = [[' ' for i in range(width + 2)] for j in range(hight + 2)]
     for i in range(1, hight+1):
         for j in range(1, width+1):
             new_screen[i][j] = screen[i][j]
+            count[i][j] = get_near_by_cells_count(screen, i, j)
     for i in range(1, hight+1):
         for j in range(1, width+1):
-            count = get_near_by_cells_count(new_screen, i, j)
-            if count == 3:
+            if count[i][j] == 3:
                 new_screen[i][j] = 'o'
             elif count != 2:
                 new_screen[i][j] = ' '
@@ -126,15 +127,11 @@ def is_state_same(screen, new_screen):
     的状态一致，则返回True；否则返回False
 
     """
-    is_same = True
     for i in range(1, hight+1):
         for j in range(1, width+1):
             if screen[i][j] != new_screen[i][j]:
-                is_same = False
-                break
-        if is_same == False:
-            break
-    return is_same
+                return False
+    return True
     # 请将以下"pass"删除，然后补充函数的实现代码
 
 
@@ -173,6 +170,7 @@ def start():
         new_screen = update(screen)
         if is_state_same(screen, new_screen):
             print("This is the last status.")
+            input() # Pasue the Terminal
             break
         else:
             screen = new_screen
