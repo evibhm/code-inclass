@@ -113,7 +113,7 @@ def update(screen):
         for j in range(1, width+1):
             if count[i][j] == 3:
                 new_screen[i][j] = 'o'
-            elif count != 2:
+            elif count[i][j] != 2:
                 new_screen[i][j] = ' '
     return new_screen
     # 请将以下"pass"删除，然后补充函数的实现代码
