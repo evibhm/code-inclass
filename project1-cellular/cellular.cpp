@@ -199,19 +199,14 @@ bool isStateSame(char **screen, char **newScreen)
     根据判断更新前后细胞的状态，如果更新前细胞(i,j)的状态与更新后细胞(i,j)
     的状态一致，则返回True；否则返回False
     */
-   bool isSame = true;
    for (int i = 1; i <= hight; ++i) {
        for (int j = 1; j <= width; ++j) {
            if (screen[i][j] != newScreen[i][j]) {
-               isSame = false;
-               break;
-           }
-           if (!isSame) {
-               break;
+               return false;
            }
        }
    }
-   return isSame;
+   return true;
 }
 
 // 辅助函数8 复制 screen1 到 screen2
