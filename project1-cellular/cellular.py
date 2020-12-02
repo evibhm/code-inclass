@@ -154,7 +154,7 @@ def start():
     #input()
     #os.system("cls")
     ##请在以下部分实现主程序的上述功能
-    #os.system("cls") # 用于清空窗口之前打印的内容
+    os.system("cls") # 用于清空窗口之前打印的内容
     print('==== 元胞自动机 ====')
     print('作者：your name\n')
     print('按下任意键开始游戏...')
