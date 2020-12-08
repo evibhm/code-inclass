@@ -6,6 +6,7 @@
  - **上机练习1** [./exercise1](<https://github.com/evibhm/code-inclass/tree/main/exercise1>)
  - **上机练习2** [./exercise2](<https://github.com/evibhm/code-inclass/tree/main/exercise2>)
  - **上机练习3** [./exercise3-array](<https://github.com/evibhm/code-inclass/tree/main/exercise3-array>)
+ - - **上机练习3** [./exercise4-function](<https://github.com/evibhm/code-inclass/tree/main/exercise4-function>)
 ***
 ## project
 > **在这里储存一些微小但不属于算法题的代码**
