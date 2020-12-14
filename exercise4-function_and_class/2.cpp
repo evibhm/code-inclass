@@ -45,9 +45,9 @@ int main(){
 
     int min, max;
     std::cin >> min >> max;
-    for (int i = 0; i <= ans; ++i) {
-        if (arr[i] >= min && arr[i] <= max) {
-            std::cout << arr[i] << std::endl;
+    for (const auto &i : arr) {
+        if (i >= min && i <= max) {
+            std::cout << i << std::endl;
         }
     }
     return 0;

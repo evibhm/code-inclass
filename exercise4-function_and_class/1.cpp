@@ -1,24 +1,18 @@
 #include <iostream>
-#include <algorithm>
-
-void cacuGcd(int &a, int &b)
-{
-    int t = b;
-    b = a % b;
-    a = t;
-}
 
 int getGcdCount(int a, int b)
 {
     int count = 0;
     if (a < b) {
-        std::swap(a, b);
+        int t = a;
+        a = b;
+        b = t;
     }
     while (b != 0) {
-        cacuGcd(a, b);
+        int t = b;
+        b = a % b;
+        a = t;
         ++count;
-        // TEST
-        // std::cout << "Caculate " << count << ": a == " << a << " , b == " << b << std::endl; 
     }
     return count;
 }

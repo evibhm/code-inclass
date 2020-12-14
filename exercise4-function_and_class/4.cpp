@@ -4,7 +4,7 @@
 int main()
 {
     int n;
-    std::string buf = "";
+    std::string buf;
     std::cin >> n;
     for (int i = 0; i < (1<<n); ++i) {
         for (int j = 0; j < (1<<n); ++j) {
