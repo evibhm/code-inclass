@@ -37,14 +37,14 @@ int Fraction::gcd(int a, int b)
 
 void Fraction::simplify()
 {
-    int FractionGcd;
+    int ugcd;
     if (molecular > 0)
-        FractionGcd = gcd(molecular, denominator);
+        ugcd = gcd(molecular, denominator);
     else {
-        FractionGcd = gcd(-molecular, denominator);
+        ugcd = gcd(-molecular, denominator);
     }
-    molecular /= FractionGcd;
-    denominator /= FractionGcd;
+    molecular /= ugcd;
+    denominator /= ugcd;
 }
 
 Fraction Fraction::add(Fraction ufraction)
