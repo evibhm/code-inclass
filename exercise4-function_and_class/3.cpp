@@ -49,8 +49,6 @@ void Fraction::simplify()
 
 Fraction Fraction::add(Fraction ufraction)
 {
-    molecular + ufraction.molecular;
-    denominator + ufraction.denominator;
     return Fraction(molecular * ufraction.denominator + denominator * ufraction.molecular, ufraction.denominator * denominator);
 }
 
@@ -80,15 +78,11 @@ int main()
     std::cin >> molecular1 >> denominator1 >> molecular2 >> denominator2;
     Fraction fraction1(molecular1, denominator1);
     Fraction fraction2(molecular2, denominator2);
-    Fraction fraction3 = fraction1.add(fraction2);
-    Fraction fraction4 = fraction1.sub(fraction2);
-    Fraction fraction5 = fraction1.mul(fraction2);
-    Fraction fraction6 = fraction1.div(fraction2);
     fraction1.show();
     fraction2.show();
-    fraction3.show();
-    fraction4.show();
-    fraction5.show();
-    fraction6.show();
+    fraction1.add(fraction2).show();
+    fraction1.sub(fraction2).show();
+    fraction1.mul(fraction2).show();
+    fraction1.div(fraction2).show();
     return 0;
 }
