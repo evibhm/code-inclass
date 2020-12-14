@@ -15,7 +15,7 @@ int main(){
     int palindrome;
     for (int d1 = 1; d1 < 10; d1+=2) {
         for (int d2 = 0; d2 < 10; ++d2) {
-            palindrome = 100*d1 + 10*d2 + d1;
+            palindrome = 101*d1 + 10*d2;
             if (isPrime(palindrome)) {
                 arr.push_back(palindrome);
             }
@@ -24,7 +24,7 @@ int main(){
     for (int d1 = 1; d1 < 10; d1+=2) {
         for (int d2 = 0; d2 < 10; ++d2) {
             for (int d3 = 0; d3 < 10; ++d3) {
-                palindrome = 10000*d1 + 1000*d2 +100*d3 + 10*d2 + d1;
+                palindrome = 10001*d1 + 1010*d2 +100*d3;
                 if (isPrime(palindrome)) {
                     arr.push_back(palindrome);
                 }
@@ -35,7 +35,7 @@ int main(){
         for (int d2 = 0; d2 < 10; ++d2) {
             for (int d3 = 0; d3 < 10; ++d3) {
                 for (int d4 = 0; d4 < 10; ++d4){
-                    palindrome = 1000000*d1 + 100000*d2 + 10000*d3 + 1000*d4 +100*d3 + 10*d2 + d1;
+                    palindrome = 1000001*d1 + 100010*d2 + 10100*d3 + 1000*d4;
                     if (isPrime(palindrome)) {
                         arr.push_back(palindrome);
                     }
