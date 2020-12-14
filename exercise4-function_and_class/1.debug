@@ -1,10 +1,18 @@
-10   
+10
 45 78
 Caculate 1: a == 45 , b == 33
 Caculate 2: a == 33 , b == 12
 Caculate 3: a == 12 , b == 9
 Caculate 4: a == 9 , b == 3
 Caculate 5: a == 3 , b == 0
+64 56
+Caculate 1: a == 56 , b == 8
+Caculate 2: a == 8 , b == 0
+12 89
+Caculate 1: a == 12 , b == 5
+Caculate 2: a == 5 , b == 2
+Caculate 3: a == 2 , b == 1
+Caculate 4: a == 1 , b == 0
 45 65
 Caculate 1: a == 45 , b == 20
 Caculate 2: a == 20 , b == 5
@@ -36,8 +44,6 @@ Caculate 2: a == 9 , b == 7
 Caculate 3: a == 7 , b == 2
 Caculate 4: a == 2 , b == 1
 Caculate 5: a == 1 , b == 0
-16 95
-Caculate 2: a == 15 , b == 1
 16 95
 Caculate 1: a == 16 , b == 15
 Caculate 2: a == 15 , b == 1
